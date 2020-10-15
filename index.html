@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Placar dozamigo</h1>
+        <div class="flex">
+        <div class="we-container">
+            <h1>Nós</h1>
+            <button data-bind="click: decreaseScoreWe"> - </button>
+            <span class="score" data-bind="text: scoreCountWe"></span>
+            <button data-bind="click: increaseScoreWe"> + </button>
+        </div>
+        <div class="they-container">
+            <h1>Eles</h1>
+            <button data-bind="click: decreaseScoreThey"> - </button>
+            <span class="score" data-bind="text: scoreCountThey"></span>
+            <button data-bind="click: increaseScoreThey"> + </button>
+        </div>
+        
+    </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js" integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA==" crossorigin="anonymous"></script>
+    <script src="./scripts/counter.js"></script>
+</body>
+</html>
